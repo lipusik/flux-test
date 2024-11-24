@@ -20,3 +20,10 @@ spec:
         image: nginx:1.14.2
         ports:
         - containerPort: 80
+        volumeMounts:
+        - mountPath: /data
+          name: configmap-test
+      volumes:
+      - name: configmap-test
+        configMap: 
+          name: configmap-test
