@@ -15,6 +15,6 @@ spec:
   targetNamespace: pt
   timeout: 3m0s
   wait: true
-  resources:
-    deployment.yaml
-  namePrefix: dev-
+  # resources:
+  #   deployment.yaml
+  # namePrefix: dev-
