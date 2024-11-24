@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: special-config
-  namespace: default
+  name: configmap-test
+  namespace: flux
 data:
   SPECIAL_LEVEL: very
   SPECIAL_TYPE: charm
