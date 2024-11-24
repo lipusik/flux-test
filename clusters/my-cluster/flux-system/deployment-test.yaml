@@ -5,8 +5,6 @@ metadata:
   namespace: flux
   labels:
     app: nginx2
-annotations:
-  rollme: {{ randAlphaNum 5 | quote }}
 spec:
   replicas: 2
   selector:
@@ -16,6 +14,8 @@ spec:
     metadata:
       labels:
         app: nginx
+      annotations:
+        rollme: {{ randAlphaNum 5 | quote }}
     spec:
       containers:
       - name: nginx1
