@@ -15,7 +15,7 @@ spec:
       labels:
         app: nginx
       annotations:
-        rollme: "123"
+        rollme: "124"
     spec:
       containers:
       - name: nginx1
