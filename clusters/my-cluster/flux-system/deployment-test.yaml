@@ -15,7 +15,7 @@ spec:
       labels:
         app: nginx
       annotations:
-        rollme: {{ randAlphaNum 5 | quote }}
+        rollme: "123"
     spec:
       containers:
       - name: nginx1
