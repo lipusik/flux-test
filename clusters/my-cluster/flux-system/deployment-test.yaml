@@ -14,10 +14,9 @@ spec:
     metadata:
       labels:
         app: nginx
-        date: "+%H:%M:%S %d/%m/%y"
     spec:
       containers:
-      - name: nginx
+      - name: nginx1
         image: nginx:1.14.2
         ports:
         - containerPort: 80
